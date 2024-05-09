@@ -1,0 +1,25 @@
+Criando pasta em um local do PC
+
+cd ~/
+cd Desktop
+
+
+mkdir nomedapasta
+
+COMANDO GIT
+
+echo "# meu-novo-projeto" >> README.md
+git init
+git add README.md -> adiciona um leiame
+git add . -> adiciona tudo ao staged changes
+git commit -m "primeira versao"
+
+git branch -M main
+git remote add origin https://github.com/matheusrfigueiredo/meu-novo-projeto.git
+git push -u origin main -> adiciona mudanças no github
+
+git pull -> puxa informações do github
+
+git log
+
+git status

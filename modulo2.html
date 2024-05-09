@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java Script Básico - Módulo 2</title>
+</head>
+    <body>
+        <script>
+        /*
+            Aprendizado sobre Variáveis - Básico
+        */
+        var nome = "Matheus"
+        
+        var peso = 70
+        var altura = 1.7
+
+        var resultado = peso/ (altura * altura)
+
+        // ---------------------------------------
+        // Escopo de Variáveis - var
+
+        var x = 10
+
+        console.log("x", x)
+
+        {
+            console.log("x", x)
+            x = 20
+
+            var y = 30
+        }
+
+        console.log("x", x)
+
+        console.log("y", y)
+
+        /*
+            Variável var pode ser acessada e modificada dentro do escopo global e também em um escopo específico, exemplo:
+            variável y sendo mostrada no escopo global e variável x sendo modificada e mostrada logo após.
+        */
+        // --------------------------------------
+        // Escopo de Variáveis - let
+        let x = 10
+
+        console.log("x", x)
+
+        {
+            console.log("x", x)
+            x = 20
+
+            let y = 30
+        }
+
+        console.log("x", x)
+
+        console.log("y", y)
+
+        /*  
+            Variável let não permite o acesso e modificação fora do escopo a qual foi declarada. Exemplo:
+            variável y não pode ser mostrada no escopo global, pois está sendo declarada dentro de um escopo específico
+        */
+        // --------------------------------------
+        // Escopo de Variáveis - Const
+        const x = 10
+
+        console.log("x", x)
+
+        {
+            console.log("x", x)
+            x = 20
+
+            const y = 30
+        }
+
+        console.log("x", x)
+
+        console.log("y", y)
+
+        
+        //    Variável const não podem ser alteradas, são valores constantes
+        
+        /*
+            Normas e Regras
+        */
+
+        let nomeCompleto = "Matheus Ribeiro Figueiredo"
+
+        let num1 = 10
+
+        let dataNascimento = new Date(1999, 11, 16)
+
+        let cpf ="000.000.000-00"
+
+        // Precisam iniciar com uma letra, _ ou $ 
+        // Não podem conter espaços
+        // Podem conter apenas letras, números, _ ou $
+        // É uma linguagem case-sensitive
+        // Não podem utilizar palavras reservadas
+        </script>
+    </body>
+</html>

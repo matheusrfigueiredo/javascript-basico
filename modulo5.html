@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aprendizado Módulo 5 - Javascript Básico</title>
+    <script>
+        /* ----------------------------------------------- Comparações ------------------------------------------------------- */
+        // Comparação de 2 valores e/ou variáveis
+
+        // - Igual - '==' | "1" == 1 - Retornará true;
+        // Comparação estrita (Idêntico) - '===' | "1" === 1 - Retornará false;
+        // - Diferente - '!=';
+        // - Menor que - '<';
+        // - Maior que - '>';
+        //- Menor ou igual que - '<=';
+        // - Maior ou Igual que - '>=';
+
+
+        // Uma comparação sempre retornará verdadeiro ou falso
+
+        1 > 2
+        1 == 1
+        "A" == "A"
+        "A" < "B"
+
+        //Para variáveis
+
+        const idade = 24
+        const limite = 18
+
+        if (idade >= limite) {
+            console.log("Maior de idade!")
+        }
+
+        //Falsy - Valores considerados falsos quando:
+        
+        // False
+        // 0
+        // -0
+        // 0n
+        // ""
+        // ''
+        // ``
+        // null
+        // undefined
+        // NaA
+
+        console.log(0 ? "Verdadeiro" : "Falso") // - IF TERNÁRIO
+
+        // Truthy - Valores considerados verdadeiros quando:
+        
+        // true
+        // {}
+        // []
+        // 1
+        // 1.2
+        // -1
+        // -1.2
+        // Infinity
+        // - Infinity
+
+        console.log(1? "Verdadeiro" : "Falso") // - IF TERNÁRIO
+
+
+        /* -------------------------------------- Operadores Lógicos ------------------------------------------- */
+
+        // OR (ou)
+        console.log(false || false) // false
+        console.log(true || false) // true
+        console.log(false || true) // true
+        console.log(true || true) // true
+
+        // AND (e)
+
+        console.log(false && false)
+        console.log(true && true)
+        console.log(false && true)
+        console.log(true && true)
+
+        // 2+ e mistos
+        console.log(true || false && true)
+        console.log(true || (false && true))
+
+        //NOT
+
+        console.log(!true) // false
+
+        // O Resultado de uma expressão (Comparação) é boolean.
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java Script Básico - Módulo 3</title>
+</head>
+<body>
+    <script>
+
+        // Agrupamento de variáveis
+
+        // variável endereco - criada como objeto
+
+        let nome = "Matheus", idade = 23, endereco = {
+            Rua: "Rua Belkiss - RJ",
+            cidade: "Rio de Janeiro"
+        }
+        console.log ("nome: ", nome)
+        console.log("idade: ", idade)
+        console.log("Endereço: ", endereco)
+        //----------------------------------------------
+        // Concatenação e interpolação
+
+        //Concatenação: +
+        console.log(nome + " tem " + (idade + 1) + " anos de idade. E reside em: " + JSON.stringify(endereco))
+
+        //interpolação: ``
+        console.log(`${nome} tem ${idade + 1} anos de idade.`)
+
+        // Função JSON.stringify - Transforma nosso objeto, podendo ler no console.log()
+
+
+        // Variável do tipo - OBJETO
+        const person = {
+            nome1: "Jorcelane",
+            idade1: 25,
+            etnia1: "pardo",
+            endereco1: {
+                rua1: "Av Belkiss",
+                cidade1: "Rio de Janeiro"
+            },
+        }
+
+        // É possível manipular uma constant do tipo object e array (Esses tipos de dados fogem do padrão). Ex..:
+
+        person.nome1 = "Rodrigo"
+
+        console.log(person.nome1)
+        console.log(person.idade1)
+
+        //Interpolação
+        console.log(`${person.nome1} tem ${person.idade1} anos, é ${person.etnia1} e reside na cidade do ${person.endereco1.cidade1}`)
+
+        // ----------------------------------------------------------------------------------------------------------------------------
+
+        //Variáveis - Tipo => Arrays
+        // variável + índice (Que sempre tem inicio no índice 0)
+        
+        const persons = ["Matheus", "Lucas", "Renato"]
+
+
+        console.log(persons[0])
+        console.log(persons[1])
+        console.log(persons[2])
+
+        // Acessar o tamanho do arrays
+
+        // Arrays de objects
+
+        const persons1 = [
+            {nome: "Matheus",idade: 24},
+            {nome: "Lucas", idade: 31},
+            {nome: "Renato", idade: 41}
+        ]
+
+        console.log(persons1[0])
+
+        // Variáveis tipo Date
+
+        // const dataNascimento = new Date()
+        // const dataNascimento = new Date(1999, 10, 16, 5)
+        // const dataNascimento = new Date("Nov 16 1999 05:00:00")
+        const dataNascimento = new Date("1999-11-16T09:03:00.000Z")
+        const hoje = new Date()
+
+        // console.log(dataNascimento)
+        // console.log(dataNascimento.toISOString())
+
+
+        //Pega dia, mês e ano separadamente
+        // console.log("dia", dataNascimento.getDate())
+        // console.log("mês", dataNascimento.getMonth() + 1)
+        // console.log("ano", dataNascimento.getFullYear())
+
+        console.log("idade", hoje.getFullYear() - dataNascimento.getFullYear())
+    </Script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java Script Básico - Módulo 1</title>
+</head>
+<body>
+    <script>
+        console.log ("Olá, mundo");
+
+        /*
+            TIPAGEM DE DADOS
+            Comando typeof: Mostra o tipo do dado que estou mostrando no console;
+        */
+        console.log("1", typeof 1)
+        console.log("1.2", typeof 1.2)
+        console.log("Matheus", typeof "Matheus")
+        console.log("true", typeof true)
+
+        /*
+            TYPE STRING
+            Dados tipo string precisam ficar entre '' ou "";
+
+            \ -> scape, para escapar um texto;
+        */
+        console.log("Matheus")
+        console.log("Matheus Ribeiro Figueiredo")
+        console.log("Rio de Janeiro")
+
+        /*
+            TYPE NUMBER
+        */
+        console.log(1) // Número Inteiro - int
+        console.log(1.2) // Número Fracionado - double ou float
+
+        console.log(10000) //
+
+        console.log(Math.PI)
+        console.log(Math.E)
+
+        /*
+            TYPE BOOLEAN
+            Expressa true ou false
+        */
+
+        console.log(true) // Verdadeiro
+        console.log(false) // Falso
+
+        console.log(0 == false)
+
+        /*
+            Tipo de dados infinitos / Infinity
+        */
+
+        console.log(Infinity)
+        console.log(1 / 0)
+        console.log(typeof Infinity)
+
+         /*
+            Tipo de dados - NaN -> Not a Number
+        */
+        console.lol(NaN)
+        console.log("A" / 2)
+        console.log (typeof NaN)
+
+        /*
+            Tipo de dados - null (ausência de valor) e undefined (indefinido)
+        */
+        console.log(null)
+        console.log(undefined)
+        console.log(typeof null)
+        console.log(typeof undefined)
+        
+        /*
+            Tipo de dados - Object
+        */
+        
+        console.log({propriedade: "valor"})
+
+        console.log({
+            nome: "Matheus",
+            idade: 24,
+            endereco: {
+                lagradouro: "Av",
+                rua: "Belkiss",
+                bairro: "São João de Meriti",
+            }
+        })
+
+         /*
+            Tipo de dados - Array
+        */
+        
+        console.log([1, 2, 3])
+        // 0 1 2
+        // length: 3
+
+        console.log([1, "A", {nome: "Matheus", sobrenome: "Ribeiro"}])
+
+        /*
+            Tipo de dados - Data
+        */ 
+        console.log(Date()) //Data e hora corrente => new Date()
+        console.log(new Date()) // Data e Hora corrente
+        
+        //OBS: Janeiro == 0
+        console.log(new Date(2024, 3, 6)) //Data específica e Hora corente
+        console.log(new Date(2024, 3, 6, 10, 20, 59)) // DATA E HORA
+    </script>
+</body>
+</html>
