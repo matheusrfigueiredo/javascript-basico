@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Módulo 7 - Estrutura de Repetição</title>
+</head>
+<body>
+    <script>
+        // Comando while
+        contador = 1
+        while (contador < 10) {
+            console.log("Executando: " + contador)
+        /*  console.log(`Executando: ${contador}`) */
+
+            contador++
+            /* contador+= 2, 3, 4...*/
+        }
+
+        // -----------------------------------------
+
+        // Comando for
+
+        for (let i = 0; i < 10; i++){
+            console.log(i)
+        } 
+        // Arrays sempre começam pelo índice 0
+
+        const nomes = ["Marcos", "Matheus", "Jorcelane"]
+
+        for (let n = 0; i < 3; i++){
+            console.log(nomes[i])
+        }
+
+        // Exemplo 2
+        const idades = [18, 19, 20, 21, 25]
+        for (let n = 0; n < nomes.length; n++){
+            console.log(nomes[n])
+        }
+        // -----------------------------------------
+        
+        //Comando for of
+        for (const nome of nomes) {
+            console.log(nome)
+        }
+
+        for (const idade of idades){
+            console.log(idade)
+        }
+        
+        // -----------------------------------------
+        // for in
+
+        const person = {
+            name: "Matheus",
+            idade: 25,
+            city: "São João de Meriti"
+        }
+
+        for (const prop in person){
+            console.log(`Propriedade: ${prop} - ${person[prop]}`)
+        }
+
+        // Como acessar objetos.
+        /*
+            objeto.propriedade
+            objeto.['propriedade']
+        */
+    </script>
+</body>
+</html>
